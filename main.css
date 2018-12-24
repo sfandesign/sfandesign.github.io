@@ -1,43 +1,550 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+	font-size: 2vw;
+    font-size: calc(19px + (14 - 19) * ((100vw - 410px) / (1920 - 410)));
+    min-width: 450px;
+    
+	/*font-size: calc(12px + (26 - 12) * ((100vw - 410px) / (1920 - 410)));*/
+ /*line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 410px)/(1920 - 410)));
+*/
+ }
+/*https://github.com/hankquinlan*/
+h1
+{
+    font-family: 'Merriweather';
+    font-kerning: normal;
+    font-weight:100;
+    margin:10px; 
+    text-align:center;
 }
-nav ul, footer ul {
+h2
+{
+    font-family: 'Merriweather';font-size: 24px;
+    font-kerning:auto;
+    font-weight: 100;
+    margin: 20px 20px 0;
+    text-align: center;
+}
+
+h3
+{
+    font-family: 'Merriweather';font-size: 16px;
+    font-weight:bold;
+    font-kerning:auto;
+    margin: 20px 20px 0;
+}
+p
+{
+    font-family: 'Open Sans';font-size: 14px;
+    font-kerning: normal;
+    margin: 10px 20px 10px;
+    line-height: 1.6;
+}
+a:visited {
+  color: #515151
+}
+/*------------------------ Banner --------------------*/
+.banner
+{
+    height: 130px;
+    margin: 0px;
+}
+
+/*------------------------ Nav--------------------*/
+
+.navh
+    {
+        height: 50px;
+        background-color: white;
+        position: initial;
+        
+        font-family: 'Open Sans';
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        text-align: center;
+        line-height: 50px;
+    }
+.navh a:hover
+    {
+      color:black;
+    }
+/*------------------------ Nav --------------------*/
+.menu
+    {
+        margin: 0 30 0 0;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        overflow: hidden;
+
+    }
+.menu a
+{
+    clear: left;
+    text-decoration: none;
+    color:gray;
+    margin: 0 5px;
+    line-height: 50px;
+    overflow: hidden;
+    /*border: solid;*/
+    padding: 15px;
+}
+/*------------------------ Hamburger--------------------*/
+label 
+{
+    margin: 0 40px 0 0;
+    font-size: 30px;
+    line-height: 50px;
+    width:50px;
+    height: 50px;
+    left: 0px;
+    position: absolute;
+}
+#toggle
+{
+    position: absolute;
+    margin: 0;
+    left: 0px;
+    display: none;
+}
+/*------------------------ Classes--------------------*/
+.responsivetext
+    {
+        padding:10px; 
+        margin:auto; 
+        width:800px; 
+        text-align:left;
+    }
+
+/*------------------------ Splash Page--------------------*/
+
+.welcome {
+position: relative;
+  margin:0px;
+  text-align: center;
+padding-top:45%;
+  /*padding-left:45%;*/
+}
+.welcome  h1 
+{
+    font-size: 3em;
+    font-family: 'Merriweather';
+	margin: 0vw;
+	color: #ffffff;
+}  
+.discover_container
+{
+	text-align: center;
+	max-height: 75px;
+	max-width: 175px;
+	min-height: 30px;
+	min-width: 125px;
+	width:25%; 
+	height: 40px;
+	margin:auto;
+	line-height:40px;
+	background-color: #5b72dc
+}
+ .discover_container a 
+{
+	  display: block;
+		height: 100%;
+		text-decoration: none;
+		text-align: center;
+		color: #ffffff;
+}
+ .discover_container hover 
+{
+        background: #f8f8f8;
+		
+}
+.discover_container h2 
+{
+    font-size: 1.0em;
+    font-family: 'Merriweather Sans';
+	margin:0vw;
+		
+   }
+   
+#discoverbutton:hover
+{
+	background-color: #7189f9;
+}
+
+/*------------------------ Content Container--------------------*/
+.container
+{
+  /*background-color: #F17500;*/
+  max-width: 1000px;
+  margin: auto;
+min-height: 100vh;
+  clear:both;
+  overflow: hidden;
+  text-align:center;
+}
+.containerall /*full container of all things*/
+{
+    /*background-color: #A47CAE;*/
+    margin: auto;
+    height: auto;
+    clear:both;
+    overflow: hidden;
+}
+
+/*------------------------ Image Scaling--------------------*/
+.responsiveimage {
+  display: inline-block;
+  width: 30%;
+    height:300px;
+    object-fit: cover;
+    padding: 0.5%;
+}
+/*------------------------ Home Page--------------------*/
+#leftcolumnhome
+    {
+     width: 50%; 
+        height: auto; 
+        display: inline-block; 
+        text-align: left; 
+        min-width: 450px;
+    }
+#rightcolumnhome
+    {
+        width: 40%; 
+        height:auto; 
+        display: inline-block; 
+        vertical-align:top; 
+        margin:7% 0px 0px 0px; 
+        text-align:left;
+    }
+/*------------------------ Contacts Page--------------------*/
+.contactinfo
+{
+    text-align: left; 
+    width: 30%; 
+    display: inline-block; 
+    min-width: 100px;
+}
+#email
+{
+    text-align: left; 
+    width: 30%; 
+    display: inline-block; 
+    min-width: 200px;
+    line-height: 1.6;
+}
+#phone
+{
+   text-align: left; 
+   width: 30%; 
+   display: inline-block; 
+   min-width: 100px; 
+    line-height: 1.6;
+}
+#address
+{
+  text-align: left; 
+  width: 35%; 
+  display: inline-block;
+  min-width: 200px; 
+  line-height: 1.6;
+}
+/*--------------------- Footer------------------*/
+footer 
+{
+    margin: 0;
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+    text-align:center;
+    padding-bottom: 20px;
+}
+footer ul li 
+{
+    display: inline-block;
+    margin-right: 15px;
+}
+footer ul
+{
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    padding: 20px;
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+
+.social
+{
+   height:21px; 
+   opacity: 0.25;
 }
-a {
-    text-decoration: none;
-    color: #999;
+.social:hover
+{
+   height:21px; 
+   opacity: 1.0;
 }
-a:hover {
-    text-decoration: underline;
+.socialsplash
+{
+   height:23px; 
+   opacity: 0.25;
+   padding: 5px;
 }
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+.socialsplash:hover
+{
+   height:23px; 
+   opacity: 1.0; 
+   padding: 5px;
 }
-p {
+#rightcolumnTeam
+    {
+        width: 50%; 
+        height:auto; 
+        display: inline-block; 
+        vertical-align:top; 
+        text-align:left;
+    }
+#leftcolumnTeam
+    {
+    width: 40%; 
+    height: auto; 
+    display: inline-block; 
+    text-align:left;
+    }
+.mission
+{
+    margin: 0; 
+    position: relative; 
+    top: 50%; 
+    left: 50%;
+  -ms-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
+    width:75%; 
+    max-width:900px;
     font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+.kratos
+{
+    margin: 0; 
+    position: relative; 
+    top: 50%; 
+    left: 50%;
+  -ms-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
+    width:75%; 
+    max-width:900px;
+}
+#logo
+{
+    height:130px;
+    vertical-align:top line; margin:0;padding:0;vertical-align: top;
+}
+#bannertext
+{
+    display:inline-block; 
+    padding:55px 0 0 0;
+}
+#mobilemodelogo
+{
+display: none;
+}
+hr
+{
+margin: 0px;    
+}
+/*----------------------------------------- Mobile-------------------------------------------------*/
+@media only screen and (max-width: 800px) {
+
+/*--------- Images-------*/        
+.responsiveimage 
+{
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  padding-bottom: 30px;
+  justify-content: center;
+  height: auto;
+}
+/*--------- Image Grid-------*/  
+    #gridimage1
+        {
+        max-width: 360px;
+            margin: auto;
+        }
+    #gridimage2
+        {
+        max-width: 360px;
+            margin: auto;
+        }
+/*--------- Contacts Page-------*/    
+    #email
+    {
+        width: 100%;
+        padding: 10px;
+        line-height: 1.6;
+    }
+    #phone
+    {
+      width: 100%;
+      padding: 10px;
+      line-height: 1.6;
+    }
+    #address
+    {
+     width: 100%;
+     padding: 10px;
+        line-height: 1.6;
+    }
+/*--------- Mobile Nav-------*/      
+    label
+    {
+        display: block;
+        cursor: pointer;
+        z-index: 3;
+    }
+    .menu
+    {
+        text-align: center;
+        width: 100%;
+        display: none;
+        background-color: white;
+        font-size: 0.9em;
+        font-family: 'open sans';
+        
+    }
+    .menu a
+    {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+        padding: 5px;
+        
+    }
+    #toggle:checked + .menu 
+    {
+        display: block;
+    }
+/*--------- Home-------*/      
+    #leftcolumnhome
+    {
+    width: 100%; 
+    height: auto; 
+    display: inline-block; 
+    text-align:center;
+    }
+    #rightcolumnhome
+    {
+        width: auto; 
+        height: auto;
+        display: inline-block; 
+        /*background-color: aliceblue;
+        text-align:left;
+        vertical-align:top;
+        /*border: solid;*/
+        margin: 0px;
+    }
+    /*--------- Classes-------*/
+    .responsivetext
+    {
+        /*border:1px solid;*/
+        margin: 20px;
+        width:auto;
+        height: auto;
+        text-align:left;
+        text-align:left;
+        padding:10px; 
+        line-height: 1.6;
+    }
+    #rightcolumnTeam
+    {
+        width: 100%; 
+        height:auto; 
+        display: inline-block; 
+        vertical-align:top; 
+        text-align:center;
+    }
+    #leftcolumnTeam
+    {
+    width: 100%; 
+    height: auto; 
+    display: inline-block; 
+    text-align:left;
+    padding: 10px;
+    letter-spacing: 1.6;
+    }
+    .banner
+    {
+        height: 65px;
+        /*border: 2px solid #000000;*/
+    }
+    #logo
+{
+    height:130px; 
+    border:solid;
+    vertical-align:top line; 
+    margin:0;
+    padding:0;
+    vertical-align: top; 
+    display: none;
+}
+#bannertext
+{
+    display:inline-block; 
+    padding:0;
+}
+    #mobilemodelogo
+{
+height:70px; opacity:0.5;
+    display: block;
+}
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+
+
+
+/* OLD NAV
+#nav {
+text-align:center;
+border: 2px solid #000000;
+height: 50px;
+margin: 0;
+min-width: 784px;
+}
+#nav ul {
+display:inline-block;
+list-style:none; 
+margin: 0 0 0 0;
+}
+* html #nav ul {  Target IE6 
+display:inline;
+}
+*+html #nav ul {  Target IE7 
+display:inline;
+}
+#nav li {
+display:inline;
+}
+#nav a {
+float:left;
+text-decoration:none; 
+padding:9px 10px;
+margin:0 3px 0 3px;
+font-size: 12px;
+}
+#nav a:hover
+{
+  background-color:darkgrey;
+  color:black;
+}
+#nav div{
+float:left;
+margin:14px 0 0 0;   
+border-top: solid black 1px; width:175px;
 }
 
-ul.posts li {
-    list-style: none;
+#splash
+{
+ position: absolute;
+    top: 50%;
 }
+*/
