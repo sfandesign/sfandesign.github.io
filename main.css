@@ -46,6 +46,10 @@ a:visited {
 a {
   color: #515151;
 }
+hr
+{
+  margin: 0;  
+}
 /*------------------------ Banner --------------------*/
 .banner
 {
@@ -79,6 +83,7 @@ a {
         position: absolute;
         width: 100%;
         overflow: hidden;
+        z-index: 7;
 
     }
 .menu a
@@ -91,7 +96,7 @@ a {
     overflow: hidden;
     /*border: solid;*/
     padding: 15px;
-    z-index: 5;
+    z-index: 7;
 }
 /*------------------------ Hamburger--------------------*/
 label 
@@ -103,7 +108,6 @@ label
     height: 50px;
     left: 0px;
     position: absolute;
-    z-index: 7;
 }
 #toggle
 {
@@ -408,7 +412,7 @@ margin: 0px;
     {
         display: block;
         cursor: pointer;
-        z-index: 7;
+        z-index: 8;
     }
     .menu
     {
@@ -418,7 +422,7 @@ margin: 0px;
         background-color: white;
         font-size: 0.9em;
         font-family: 'open sans';
-        z-index: 5;
+        z-index: 7;
     }
     .menu a
     {
@@ -426,6 +430,7 @@ margin: 0px;
         border-bottom: 1px solid #EAEAEB;
         margin: 0;
         padding: 5px;
+        z-index: 7;
         
     }
     #toggle:checked + .menu
@@ -456,12 +461,11 @@ margin: 0px;
     .responsivetext
     {
         /*border:1px solid;*/
-        margin: 20px;
         width:auto;
         height: auto;
         text-align:left;
         text-align:left;
-        padding:10px; 
+        padding:20px; 
         line-height: 1.6;
     }
     #rightcolumnTeam
