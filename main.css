@@ -5,7 +5,6 @@ html,body {
 	font-size: 2vw;
     font-size: calc(19px + (14 - 19) * ((100vw - 410px) / (1920 - 410)));
     min-width: 450px;
-	
     
 	/*font-size: calc(12px + (26 - 12) * ((100vw - 410px) / (1920 - 410)));*/
  /*line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 410px)/(1920 - 410)));
@@ -60,10 +59,10 @@ a {
 
 .navh
     {
+        box-sizing: border-box;
         height: 50px;
         background-color: white;
         position: initial;
-        
         font-family: 'Open Sans';
         font-size: 0.8em;
         letter-spacing: 2px;
@@ -94,6 +93,7 @@ a {
     overflow: hidden;
     /*border: solid;*/
     padding: 15px;
+    z-index: 5;
 }
 /*------------------------ Hamburger--------------------*/
 label 
@@ -181,18 +181,15 @@ padding-top:45%;
 .container
 {
   /*background-color: #F17500;*/
-
   max-width: 1000px;
   margin: auto;
-min-height: 100vh;
+  min-height: 100vh;
   clear:both;
   overflow: hidden;
   text-align:center;
-box-sizing:border-box;
 }
 .containerall /*full container of all things*/
 {
-box-sizing: border-box;
     /*background-color: #A47CAE;*/
     margin: auto;
     height: auto;
@@ -293,7 +290,7 @@ footer ul
 .socialsplash
 {
    height:23px; 
-   opacity: 0.25;
+   opacity: 0.50;
    padding: 5px;
 }
 .socialsplash:hover
@@ -412,12 +409,12 @@ margin: 0px;
     .menu
     {
         text-align: center;
-        width: 100%;
+        width: 100vw;
         display: none;
         background-color: white;
         font-size: 0.9em;
         font-family: 'open sans';
-        
+        z-index: 5;
     }
     .menu a
     {
