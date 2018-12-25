@@ -5,6 +5,7 @@ html,body {
 	font-size: 2vw;
     font-size: calc(19px + (14 - 19) * ((100vw - 410px) / (1920 - 410)));
     min-width: 450px;
+	
     
 	/*font-size: calc(12px + (26 - 12) * ((100vw - 410px) / (1920 - 410)));*/
  /*line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 410px)/(1920 - 410)));
@@ -187,6 +188,7 @@ min-height: 100vh;
   clear:both;
   overflow: hidden;
   text-align:center;
+box-sizing:border-box;
 }
 .containerall /*full container of all things*/
 {
