@@ -134,7 +134,7 @@ padding-top:45%;
 {
     font-size: 3em;
     font-family: 'Merriweather';
-	margin: 0vw;
+	margin: 0;
 	color: #ffffff;
 }  
 .discover_container
@@ -167,7 +167,7 @@ padding-top:45%;
 {
     font-size: 1.0em;
     font-family: 'Merriweather Sans';
-	margin:0vw;
+	margin:0;
 		
    }
    
@@ -182,7 +182,7 @@ padding-top:45%;
   /*background-color: #F17500;*/
   max-width: 1000px;
   margin: auto;
-  min-height: 100vh;
+  min-height: 100%;/*100vh*/
   clear:both;
   overflow: hidden;
   text-align:center;
