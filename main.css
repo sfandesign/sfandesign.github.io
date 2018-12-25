@@ -16,6 +16,7 @@ h1
     font-weight:100;
     margin:10px; 
     text-align:center;
+    color: #515151;
 }
 h2
 {
@@ -24,6 +25,7 @@ h2
     font-weight: 100;
     margin: 20px 20px 0;
     text-align: center;
+    color: #515151;
 }
 
 h3
@@ -48,7 +50,7 @@ a {
 }
 hr
 {
-  margin: 0;  
+  margin: 0; 
 }
 /*------------------------ Banner --------------------*/
 .banner
@@ -347,13 +349,15 @@ footer ul
 }
 #logo
 {
-    height:130px;
-    vertical-align:top line; margin:0;padding:0;vertical-align: top;
+    height:120px;
+    vertical-align:top line; margin:10px 0 0 0;padding:0;vertical-align: top;
 }
 #bannertext
 {
     display:inline-block; 
+    font-size: 1.5em;
     padding:55px 0 0 0;
+    color: #515151;
 }
 #mobilemodelogo
 {
