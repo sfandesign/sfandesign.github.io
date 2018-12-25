@@ -5,7 +5,6 @@ html,body {
 	font-size: 2vw;
     font-size: calc(19px + (14 - 19) * ((100vw - 410px) / (1920 - 410)));
     min-width: 450px;
-    
 	/*font-size: calc(12px + (26 - 12) * ((100vw - 410px) / (1920 - 410)));*/
  /*line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 410px)/(1920 - 410)));
 */
@@ -187,6 +186,7 @@ padding-top:45%;
   clear:both;
   overflow: hidden;
   text-align:center;
+  box-sizing: content-box;
 }
 .containerall /*full container of all things*/
 {
@@ -195,6 +195,7 @@ padding-top:45%;
     height: auto;
     clear:both;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 /*------------------------ Image Scaling--------------------*/
