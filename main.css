@@ -180,6 +180,7 @@ padding-top:45%;
 .container
 {
   /*background-color: #F17500;*/
+
   max-width: 1000px;
   margin: auto;
 min-height: 100vh;
@@ -189,6 +190,7 @@ min-height: 100vh;
 }
 .containerall /*full container of all things*/
 {
+box-sizing: border-box;
     /*background-color: #A47CAE;*/
     margin: auto;
     height: auto;
