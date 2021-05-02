@@ -18,8 +18,8 @@
              width: 100%;  
              height:80px; 
              text-align: center;
-            border-top: solid 1px #ffffff;
-             background-color: aliceblue;
+             filter:blur(0px);
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
              
          }
          #footer img
@@ -640,10 +640,11 @@ function hoverout(x)
     }    
 function textupdate()
     {
+ TODBG(thours);
         
         if(window.innerWidth>750)
             {
-        
+         document.getElementById("footer").style.backgroundColor = "transparent"; 
         if(labeltext=="instagram"){
             labeltext = "simon<br><b>photoblog</b>";
         }
@@ -660,14 +661,15 @@ function textupdate()
         labeltext = "Portfolio"; 
         }
         return labeltext;
+                
+           
            }else if(window.innerWidth<550)
                 {
                     document.getElementById("instagramtext").innerHTML = "simonphotoblog";
                      document.getElementById("instagramonetext").innerHTML = "SfDesign";
                      document.getElementById("facebooktext").innerHTML = "Facebook";
                      document.getElementById("youtubetext").innerHTML = "Youtube";
-                     document.getElementById("porttext").innerHTML = "Portfolio";
-                    
+                     document.getElementById("porttext").innerHTML = "Portfolio";  
                 }else
                     {
                     document.getElementById("instagramtext").innerHTML = "";
@@ -675,13 +677,13 @@ function textupdate()
                      document.getElementById("facebooktext").innerHTML = "";
                      document.getElementById("youtubetext").innerHTML = "";
                      document.getElementById("porttext").innerHTML = "";
+                       
                     }
         
     }
     
     function startpage()
     {
-        
         current = new Date();
         thoursinitial = current.getHours();
         thours = thoursinitial;
