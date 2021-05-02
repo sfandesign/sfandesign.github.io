@@ -2,6 +2,7 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+    
  @media only screen and (max-width: 550px)
      {
         .Centered
@@ -22,6 +23,8 @@
               background-color: #292C3D;
              background-size: 1300% 1300%;
              background-position: bottom;
+             
+             
          }
          .footer img
          {
@@ -31,36 +34,10 @@
 
 
          body{
-      background-image:
-    linear-gradient(180deg, #BAD9FF,#B1BDCB,#F0AE57,#CB897D,#476297,#292C3D);
-    background-size: 500% 500%;
-    background-position: bottom;               
+    background-color: #292C3D;                 
             min-width: 310px;
              height: auto;
              margin: 0px;
-             @keyframes todanimationmidday{
-            0% { background-position: top}
-            100%{background-position: top}
-        }
-        }
-           @keyframes todanimationnight{
-            0% { background-position: bottom}
-            100%{background-position: bottom;
-            }
-        }
-        @keyframes todanimationmorning{
-            0% { background-position: bottom}
-            100%{background-position: top}
-        }
-                @keyframes todanimationsunset{
-            0% { background-position: top}
-            100%{background-position: 60% 60%;}
-        }
-                    @keyframes todanimationsunsetnight{
-            0% { background-position: 60% 60%;}
-            100%{background-position: bottom;}
-        }
-             
     }
          .fadein
     {
@@ -104,7 +81,7 @@ animation: fadeIn ease 3s;
 #porttext
     {
         text-align: left;
-        display: inline-block;
+                display: inline-block;
     }
 
 #facebook
@@ -118,12 +95,12 @@ animation: fadeIn ease 3s;
         border-bottom: solid 1px #7E7E7E;
         transition:all 0.2s ease-out 50ms;
     }
-#facebooktext
+    #facebooktext
     {
  text-align: left;
     }
-#facebook:hover{
-background-color: rgba(166, 166, 166, 0.75);
+          #facebook:hover{
+     background-color: rgba(166, 166, 166, 0.75);
 transition:all 0.2s ease-out 50ms;
         }    
 #instagram:hover{
@@ -140,9 +117,11 @@ transition:all 0.2s ease-out 50ms;
     font-family: 'Montserrat Medium', sans-serif;
     font-kerning: normal;
     line-height: 20 px;
-    border-bottom: solid 1px #7E7E7E;
-    transform: scale(1.0);
-    transition:all 0.2s ease-out 50ms;   
+       
+        border-bottom: solid 1px #7E7E7E;
+        transform: scale(1.0);
+        transition:all 0.2s ease-out 50ms;
+
     }
 #instagramtext
          {
@@ -156,8 +135,12 @@ transition:all 0.2s ease-out 50ms;
     color: #7E7E7E;
     text-align: left;
     padding: 0 5% 0 5%;
-    cursor:pointer;   
+cursor:pointer;
+        
     }
+         
+
+        
 #instagramone
     {
 display: block;
@@ -167,13 +150,13 @@ display: block;
     font-family: 'Montserrat Medium', sans-serif;
     font-kerning: normal;
     line-height: 20 px;
-    border-bottom: solid 1px #7E7E7E;
-    transition:all 0.2s ease-out 50ms;
+         border-bottom: solid 1px #7E7E7E;
+           transition:all 0.2s ease-out 50ms;
 
     }
  #instagramone:hover{
      background-color: rgba(166, 166, 166, 0.75);
-     transition:all 0.2s ease-out 50ms;
+transition:all 0.2s ease-out 50ms;
         }           
 
 #youtube
@@ -186,13 +169,13 @@ display: block;
     font-kerning: normal;
     font-kerning: normal;
     line-height: 20 px;
-    border-bottom: solid 1px #7E7E7E;
-    transition:all 0.2s ease-out 50ms;
+         border-bottom: solid 1px #7E7E7E;
+                transition:all 0.2s ease-out 50ms;
 
     } 
   #youtube:hover{
-    background-color: rgba(166, 166, 166, 0.75);
-    transition:all 0.2s ease-out 50ms;
+     background-color: rgba(166, 166, 166, 0.75);
+transition:all 0.2s ease-out 50ms;
         }            
 #port
     {
@@ -211,12 +194,13 @@ transition:all 0.2s ease-out 50ms;
         }         
 .socialicons
          {
-            height: 75px;  
-            margin-left: auto;
-            margin-right: auto;
-            display: inline-block;
-            vertical-align: middle;
-            width:100px;
+             height: 75px;  
+             margin-left: auto;
+             margin-right: auto;
+             display: inline-block;
+             vertical-align: middle;
+             width:100px;
+             
          }
          
      }
@@ -247,6 +231,9 @@ background-color: transparent; margin: 0;
 html{
     scroll-behavior: smooth;
 }
+
+     
+        
 body{
     margin: 0;
     overflow: hidden;
@@ -255,15 +242,18 @@ background-size:cover; no-repeat center center fixed;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; 
-    animation: fadeIn ease 2s;
+
+    /*animation: fadeIn ease 2s;
 -webkit-animation: fadeIn ease 2s;
 -moz-animation: fadeIn ease 2s;
 -o-animation: fadeIn ease 2s;
 -ms-animation: fadeIn ease 2s;
+    transition-property: opacity;*/
   background-image:
     linear-gradient(180deg, #BAD9FF,#B1BDCB,#F0AE57,#CB897D,#476297,#292C3D);
     background-size: 500% 500%;
     background-position: bottom;
+   /* animation: todanimation 10s infinite alternate;*/
         }
         
 .Centered {
@@ -352,7 +342,6 @@ img { /*Logo*/
 transition-duration: 0.5s;     
 transition-timing-function: ease-in-out; 
             filter: brightness(1.75);
-
         
     }
 #facebook:hover{   
@@ -514,9 +503,12 @@ video { /*BGVideo*/
             0% { background-position: 60% 60%;}
             100%{background-position: bottom;}
         }
+        
 }
+    
 </style>
 <head>
+
 <script>
 function chktime()
     {
@@ -699,6 +691,7 @@ function textupdate()
 </div>
             <div class="footer">
                 <img src="mobile-05.svg" style="height: 15px; opacity: 50%; padding-top: 35px; mix-blend-mode: color-dodge;" />
+
 </div> 
 </body>
 </html>
