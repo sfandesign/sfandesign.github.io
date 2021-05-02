@@ -7,37 +7,35 @@
      {
         .Centered
         {
-            mix-blend-mode: color-dodge; 
+            mix-blend-mode: color-dodge;
+            
             padding-bottom: 80px;
         }
-         .footer
+         #footer
          {
              position: fixed; 
              bottom: 0;
              width: 100%;  
              height:80px; 
              text-align: center;
-             background-color:grey;
-              border-top: solid 1px #7E7E7E;
-            margin: 0;
-              background-color: #292C3D;
-             background-size: 1300% 1300%;
-             background-position: bottom;
-             
+            border-top: solid 1px #ffffff;
+             background-color: aliceblue;
              
          }
-         .footer img
+         #footer img
          {
-             mix-blend-mode: color-dodge;
-             filter: brightness(1.75);
+           filter: brightness(1.75);  
          }
 
 
          body{
-    background-color: #292C3D;                 
+             background-color: aliceblue;
             min-width: 310px;
              height: auto;
              margin: 0px;
+               background-image:
+    linear-gradient(180deg, #BAD9FF,#B1BDCB,#F0AE57,#CB897D,#476297,#292C3D);
+    background-size: 500% 500%;
     }
          .fadein
     {
@@ -206,13 +204,18 @@ transition:all 0.2s ease-out 50ms;
      }
     
     @media only screen and (min-width: 550px) {
-        .footer
+        #footer
          {
-position: fixed; bottom: 0;  height:80px; text-align: center; width: 100%;   
-background-color: transparent; margin: 0;
+             position: fixed; 
+             bottom: 0;  
+             height:80px; 
+             text-align: center; 
+             width: 100%;   
+             margin: 0;
+             background-color: transparent;
       
          }
-         .footer img
+         #footer img
          {
               mix-blend-mode: color-dodge;
              filter: brightness(1.75);
@@ -253,11 +256,9 @@ background-size:cover; no-repeat center center fixed;
     linear-gradient(180deg, #BAD9FF,#B1BDCB,#F0AE57,#CB897D,#476297,#292C3D);
     background-size: 500% 500%;
     background-position: bottom;
-   /* animation: todanimation 10s infinite alternate;*/
         }
         
 .Centered {
-    background-color: transparent;
     margin: auto 0; 
     position: relative; 
     top: 50%; 
@@ -268,7 +269,7 @@ background-size:cover; no-repeat center center fixed;
     /*border: solid;*/
     display: flex;
     justify-content: center;
-    padding-top: clamp(600px, 80%, 700px);
+    padding-top: clamp(600px, 80%, 600px);
 
         }
 p{
@@ -523,46 +524,92 @@ function chktime()
 function TODBG()
 {
     var BG = document.getElementById("BG");
-
+    var ft = document.getElementById("footer");
     if(thours>=0 && thours<3)
         {
             BG.style.animation="todanimationnight 10s";
             BG.style.animationFillMode = "forwards";
+            
+            if(window.innerWidth<=500)
+            {
+           ft.style.backgroundColor="#292C3D";
+           ft.style.backgroundColor="solid";     
+            }
         }
     else if(thours>=3 && thours<6)
         {
             BG.style.animation="todanimationnight 10s";
             BG.style.animationFillMode = "forwards";
+            
+            if(window.innerWidth<=500)
+            {
+            ft.style.backgroundColor="#476297";
+                       ft.style.backgroundColor="solid";   
+            }
         }
     else if(thours>=6 && thours<=9)
         {
             BG.style.animation="todanimationsunset 10s";
             BG.style.animationFillMode = "forwards";
+            
+                        if(window.innerWidth<=500)
+            {
+            ft.style.backgroundColor="#CB897D";
+           ft.style.backgroundColor="solid";   
+            }
         }
     else if(thours>9 && thours<=12)
         {
             BG.style.animation="todanimationmorning 10s";
             BG.style.animationFillMode = "forwards";
+            if(window.innerWidth<=500)
+            {
+            ft.style.backgroundColor ="#F0AE57";
+           ft.style.backgroundColor="solid";   
+            }
         }
     else if(thours>12 && thours<=15)
         {
         BG.style.animation="todanimationmidday 10s";
             BG.style.animationFillMode = "forwards";
+            
+            if(window.innerWidth<=500)
+            {
+            ft.style.backgroundColor="rgb(177,189,203,1)";
+           ft.style.backgroundColor="solid";   
+            }
+
         }
     else if(thours>15 && thours<=18)
         {
           BG.style.animation="todanimationsunset 10s";
            BG.style.animationFillMode = "forwards";
+            
+            if(window.innerWidth<=500)
+            {
+           ft.style.backgroundColor="rgb(240,174,87,1)";
+            }
         }
     else if(thours>18 && thours<=21)
         {
             BG.style.animation="todanimationsunsetnight 10s";
-            BG.style.animationFillMode = "forwards";    
+            BG.style.animationFillMode = "forwards"; 
+            
+            if(window.innerWidth<=500)
+            {
+            ft.style.backgroundColor="#CB897D";
+           ft.style.backgroundColor="solid";   
+            }
         }
     else if(thours>21 && thours<=24)
         {
             BG.style.animation="todanimationnight 10s";
             BG.style.animationFillMode = "forwards";
+            if(window.innerWidth<=500)
+                {
+            ft.style.backgroundColor="#292C3D";
+           ft.style.backgroundColor="solid";    
+        }
         }
 }    
 var current = ""
@@ -627,17 +674,9 @@ function textupdate()
                      document.getElementById("instagramonetext").innerHTML = "";
                      document.getElementById("facebooktext").innerHTML = "";
                      document.getElementById("youtubetext").innerHTML = "";
-                     document.getElementById("porttext").innerHTML = "";  
+                     document.getElementById("porttext").innerHTML = "";
                     }
         
-    }
-    function test()
-    {
-                      document.getElementById("instagramtext").innerHTML = " simonphotoblog";
-                     document.getElementById("instagramonetext").innerHTML = "SfDesign";
-                     document.getElementById("facebooktext").innerHTML = "Facebook";
-                     document.getElementById("youtubetext").innerHTML = "Youtube";
-                     document.getElementById("porttext").innerHTML = "Portfolio";
     }
     
     function startpage()
@@ -661,8 +700,6 @@ function textupdate()
 <body onresize="textupdate()" onload="startpage();" id="BG">
 
 <div class="Centered">
-    <a href="https://www.instagram.com/simonphotoblog/">
-</a>
         <div id="instagram" onmouseover="hover(this)" onmouseout="hoverout(this)" onclick="window.open('https://www.instagram.com/simonphotoblog/')">
             <img src="mobile-01.svg" class="socialicons" />
             <div style="min-width: 100px;" class="socialcontainer" ><p  id="instagramtext"></p></div>
@@ -689,8 +726,8 @@ function textupdate()
                 <p id="porttext"></p></div>
         </div>
 </div>
-            <div class="footer">
-                <img src="mobile-05.svg" style="height: 15px; opacity: 50%; padding-top: 35px; mix-blend-mode: color-dodge;" />
+            <div id="footer">
+                <img src="mobile-05.svg" style="height: 15px; opacity: 100%; padding-top: 35px;" />
 
 </div> 
 </body>
