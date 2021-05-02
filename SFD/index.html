@@ -5,23 +5,6 @@
     
  @media only screen and (max-width: 550px)
      {
-        @keyframes todanimationnight{
-            0% { background-position: bottom}
-            100%{background-position: bottom;
-            }
-        }
-        @keyframes todanimationmorning{
-            0% { background-position: bottom}
-            100%{background-position: top}
-        }
-        @keyframes todanimationsunset{
-            0% { background-position: top}
-            100%{background-position: 60% 60%;}
-        }
-        @keyframes todanimationsunsetnight{
-            0% { background-position: 60% 60%;}
-            100%{background-position: bottom;}
-        }
         .Centered
         {
             mix-blend-mode: color-dodge; 
@@ -48,19 +31,11 @@
          }
 
 
-         body{           
+         body{
+    background-color: #292C3D;                 
             min-width: 310px;
              height: auto;
              margin: 0px;
-                 animation: fadeIn ease 2s;
--webkit-animation: fadeIn ease 2s;
--moz-animation: fadeIn ease 2s;
--o-animation: fadeIn ease 2s;
--ms-animation: fadeIn ease 2s;
-  background-image:
-    linear-gradient(180deg, #BAD9FF,#B1BDCB,#F0AE57,#CB897D,#476297,#292C3D);
-    background-size: 500% 500%;
-    background-position: bottom;
     }
          .fadein
     {
@@ -142,7 +117,11 @@ transition:all 0.2s ease-out 50ms;
     line-height: 20 px;
     border-bottom: solid 1px #7E7E7E;
     transform: scale(1.0);
+<<<<<<< HEAD
     transition:all 0.2s ease-out 50ms;   
+=======
+    transition:all 0.2s ease-out 50ms;
+>>>>>>> parent of fa95739 (Update index.html)
 
     }
 #instagramtext
@@ -157,8 +136,7 @@ transition:all 0.2s ease-out 50ms;
     color: #7E7E7E;
     text-align: left;
     padding: 0 5% 0 5%;
-    cursor:pointer;
-
+    cursor:pointer;   
     }
 #instagramone
     {
@@ -226,13 +204,9 @@ transition:all 0.2s ease-out 50ms;
     @media only screen and (min-width: 550px) {
         .footer
          {
-position: fixed; 
-bottom: 0;  
-height:80px; 
-text-align: center; 
-width: 100%;   
-background-color: transparent; 
-margin: 0;
+position: fixed; bottom: 0;  height:80px; text-align: center; width: 100%;   
+background-color: transparent; margin: 0;
+      
          }
          .footer img
          {
@@ -648,9 +622,18 @@ function textupdate()
                     }
         
     }
+    function test()
+    {
+                      document.getElementById("instagramtext").innerHTML = " simonphotoblog";
+                     document.getElementById("instagramonetext").innerHTML = "SfDesign";
+                     document.getElementById("facebooktext").innerHTML = "Facebook";
+                     document.getElementById("youtubetext").innerHTML = "Youtube";
+                     document.getElementById("porttext").innerHTML = "Portfolio";
+    }
     
     function startpage()
     {
+        
         current = new Date();
         thoursinitial = current.getHours();
         thours = thoursinitial;
